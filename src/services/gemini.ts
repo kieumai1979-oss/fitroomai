@@ -6,7 +6,7 @@ if (!apiKey) {
   console.warn("GEMINI_API_KEY is not defined in the environment.");
 }
 
-const ai = new GoogleGenAI({ apiKey: apiKey || "" });
+const ai = new GoogleGenAI({ apiKey: apiKey || "" };
 
 export async function generateTryOn(imageBuffer: ArrayBuffer, mimeType: string, outfitDescription: string): Promise<string | null> {
   if (!apiKey) throw new Error("API Key missing");
